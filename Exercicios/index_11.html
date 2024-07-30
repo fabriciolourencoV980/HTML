@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em HTML</title>
+    <link rel="shortcut icon" href="desafios/imagem/faaf.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>imagens dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes, ou simplesmente aumente e diminua o tamanho de seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="desafios/imagem/foto-g.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="desafios/imagem/foto-m.png" type="image/png">
+        <img src="desafios/imagem/foto-p.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a Reproduzir audio em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="desafios/midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="desafios/midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="desafios/midia/guanacast-33.wav" type="audio/wav">      
+        <p>Infelizmente seu navegador não consegue Reproduzir áudio.</p>
+        <a href="desafios/midia/guanacast-33.mp3">clique aqui para baixar o arquivo MP3</a>
+    </audio>
+    <!-- Mp3 WAV OGG-->
+</body>
+</html>
